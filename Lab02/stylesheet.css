@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
+
+body
+{
+	margin:0;
+	padding: 0;
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+}
+.body
+{
+	width: 70%;
+	margin: 0 auto;
+	background: #fff;
+	padding:0;
+
+	box-shadow: 0 0 30px #999;
+}
+.navigasiya ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #2E8B51;
+	letter-spacing:-4px;
+}
+.navigasiya ul li
+{
+	display: inline-block;
+	letter-spacing: 0;
+}
+.navigasiya ul li a
+{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px 0 #999;
+}
+.navigasiya ul li a.activ
+{
+	background: #3CB371;
+	text-shadow: none;
+}
+.navigasiya ul li a:hover
+{
+	background: #20B2AA;
+}
+td {
+    text-align: left;
+}
+th {
+    text-align: center;
+}
+.tableZ3 {
+    border-collapse: collapse;
+    text-align: center;
+}
+.tableZ3 td {
+	border: 1px solid black;
+	padding: 10px 20px;
+}
+.ali_Right {
+	text-align: right;
+}
+.table {
+	border-collapse: collapse;
+    border: 1;
+}
+.width {
+    width: 100%;
+}
+.tableRoz,.table td {
+	text-align: center;
+}
+.Khaki {
+	background-color: Khaki;
+}
+.blue {
+	background-color:  #58ACFA;
+}
+.yellow {
+	background-color: #FACC2E;
+}
+.green {
+	background-color: #298A08;
+}
+.gray {
+	background-color: #e7e7e7;
+}
+.PaleTurquoise {
+	background-color: PaleTurquoise ;
+} 
+.table tr td {
+	padding: 10px;
+}
