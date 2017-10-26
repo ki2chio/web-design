@@ -1,0 +1,46 @@
+.VisitorsProfile fieldset div{
+	padding-bottom: 10px; 
+}
+.body{
+	margin: 0 15%;
+    font-family: 'Roboto', sans-serif;
+}
+legend {
+	text-align:center;
+	font-size: 24px; 
+}
+.Info{
+	clear:both; 
+	text-align:right;
+	float:left;
+	line-height:25px;
+}
+textarea{
+	float: left;
+	background-image: url(img/background.png);
+	color: #ddd; 
+}
+.Info label{
+	float:left;
+	padding-right:10px;
+}
+.grade,.Info{
+	width: 100%;
+	clear:both; 
+	float: center;
+}
+.button input{
+	border-radius: 10px;
+	margin-top: 10px; 
+	padding: 10px 30px;
+	background-image: url(img/background.png);
+	color: white;
+}
+.button input:hover {
+	box-shadow: 5px 5px 5px #333;
+	color: yellow;
+}
+body{
+	background-image: url(img/background.png);
+	color: #ddd;
+}
