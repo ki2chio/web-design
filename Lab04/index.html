@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="body">
-		<form class="VisitorsProfile">		
+		<form id="form" action="./send.php" class="VisitorsProfile" method="post">		
 			<fieldset class="Info">
 				<legend>Контактна інформація</legend>
 				<div>
@@ -30,16 +30,16 @@
 				</div>
 				<div>
 					<label>Улюблена кухня</label>
-						<select>
-							<option>Українська</option>
-							<option>Азіатська</option>
-							<option>Європейська</option>
-							<option>інша</option>
-						</select>
+					<select name="kitchen">
+						<option >Українська</option>
+						<option >Азіатська</option>
+						<option >Європейська</option>
+						<option >інша</option>
+					</select>
 				</div>
 				<div>
 					<label>Які страви ви хоті ли б змінити в меню</label><br>
-						<textarea spellcheck="false">Введіть страви та побажання для зміни</textarea>
+					<textarea name="dishes" spellcheck="false">Введіть страви та побажання для зміни</textarea>
 				</div>
 			</fieldset>
 			<fieldset class="grade">
@@ -80,15 +80,33 @@
 						<input type="radio" name="recomend" value="No">Ні
 					</label>
 				</div>
+				<div>
+					<label>Оцінка роботи персоналу</label>
+					<input name="GradeWork" type="range" id="GradeInput" min="0" max="100" value="100">
+					<meter min="0" max="100" value="100" low="50" high="80" optimum="30" id="GradeOutput"></meter>
+					<script src="./meter.js"></script>
+				</div>
 			</fieldset>
 			<div class="button">
-				<input  type="submit" name="send" value="Отравить">
+				<input  type="submit" name="send" value="Отравить" one>
 			</div>
-			
 		</form>
-		<meter value="2" min="0" max="10">2 out of 10</meter><br>
-		<meter value="0.6">60%</meter><br>
-		<progress value="10" max="100"></progress>
-	</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+			var form_data = $(this).serialize(); //собераем все данные из формы
+			$.ajax({
+			type: "POST", //Метод отправки
+			url: "send.php", //путь до php фаила отправителя
+			data: form_data,
+			success: function() {
+			//код в этом блоке выполняется при успешной отправке сообщения
+			alert("Ваше сообщение отпрвлено!");
+			});
+			});
+			});    
+</script>
+
+</div>
 </body>
 </html>
