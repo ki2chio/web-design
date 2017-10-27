@@ -20,6 +20,9 @@ textarea{
 	background-image: url(img/background.png);
 	color: #ddd; 
 }
+fieldset{
+	box-sizing: border-box;
+}
 .Info label{
 	float:left;
 	padding-right:10px;
