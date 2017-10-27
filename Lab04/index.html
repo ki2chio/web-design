@@ -7,14 +7,14 @@
 </head>
 <body>
 	<div class="body">
-		<form id="form" action="./send.php" class="VisitorsProfile" method="post">		
+		<form class="VisitorsProfile">		
 			<fieldset class="Info">
 				<legend>Контактна інформація</legend>
 				<div>
 					<label>Ім'я</label><input required="required" type="text" name="name">
 				</div>
 				<div>
-					<label>Телефон</label> <input pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введіть номер мобільного телефона" type="tel" name="PhoneNumber">
+					<label>Телефон</label> <input pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введіть номер мобільного телефона" type="tel" name="PhoneNumber">
 				</div>
 				<div>
 					<label>Email</label><input type="email" autocomplete="off" name="email">
@@ -88,7 +88,7 @@
 				</div>
 			</fieldset>
 			<div class="button">
-				<input  type="submit" name="send" value="Отравить">
+				<input  type="submit" name="send" value="Отравить" one>
 			</div>
 		</form>
 </div>
