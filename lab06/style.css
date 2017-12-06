@@ -1,0 +1,123 @@
+.task1>p {
+    color: green;
+    text-align: center;
+}
+.red
+{
+    color: red;
+}
+
+.pink{
+	color: pink;
+}
+
+.menu a{
+	color: pink;
+}
+.menu>ul>li>a{
+	color: green;
+}
+.menu>ul>li>ul{
+	list-style-type:none;
+}
+.berries>ul>li>a {
+	text-decoration: none;
+}
+.berries{
+	list-style-type: square;
+}
+.body>p:first-child{
+	font-size:20px;
+}
+p>code{
+	color: red;
+}
+p:last-child>code{
+	color: pink;
+}
+
+.task3z1 a{
+	text-decoration: none;
+}
+.task3z1 ul{
+	list-style: none;
+	padding: 5px;
+	margin: 0px;
+}
+.task3z1 ul a{
+	color: white;
+}
+.task3z1>ul {
+	width: 150px;
+}
+.task3z1 ul li{
+	background-color: green;
+	padding: 5px;
+}
+.task3z1 ul li ul{
+	margin: 0;
+	padding: 0;
+}
+.task3z1 ul li ul li{
+	background-color: orange;
+	padding: 5px;
+}
+.task3z1 ul li ul li a{	
+	color: black;
+	}
+.task3z1>ul>li{
+	border-bottom: 2px solid white;
+}
+
+.task3z2 table tr td{
+	padding: 5px;
+}
+.task3z2 table tr:nth-child(2n){
+	background-color: lightgray;
+}
+.task3z2 table tr:first-child{
+	background-color: blue;
+	color: white;
+	text-align: center;
+}
+.task3z2 table tr:last-child{
+	background-color: red;
+	color: white;
+}
+.task3z2 table tr td:first-child{
+	width: 100px;
+}
+.task3z2 table tr td:last-child{
+	width: 150px;
+}
+
+.chess{
+	width: 240px;
+	height: 240px;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing : -.36em;
+	line-height:0px;
+}
+.chess div {
+	margin: 0px;
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+	display: inline-table;
+
+}
+.chess div{
+	background-color: black;
+
+}
+.chess div:nth-child(-2n+8), 
+.chess div:nth-child(8) ~ div:nth-child(-2n+15), 
+.chess div:nth-child(16) ~ div:nth-child(-2n+24),
+.chess div:nth-child(24) ~ div:nth-child(-2n+31),
+.chess div:nth-child(32) ~ div:nth-child(-2n+40),
+.chess div:nth-child(40) ~ div:nth-child(-2n+47),
+.chess div:nth-child(48) ~ div:nth-child(-2n+56),
+.chess div:nth-child(56) ~ div:nth-child(-2n+63) {
+    background-color: white;
+}
