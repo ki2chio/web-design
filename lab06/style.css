@@ -1,3 +1,54 @@
+body
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+}
+.body
+{
+	width: 70%;
+	margin: 0 auto;
+	background: white;
+	padding:0;
+	box-shadow: 0 0 30px #999;
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #2E8B51;
+	letter-spacing:-4px;
+}
+.menu ul li
+{
+	display: inline-block;
+	letter-spacing: 0;
+}
+.menu ul li a
+{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px 0 #999;
+}
+.menu ul li a.activ
+{
+	background: #3CB371;
+	text-shadow: none;
+}
+.menu ul li a:hover
+{
+	background: #20B2AA;
+}
+
+
+
+
 .task1>p {
     color: green;
     text-align: center;
@@ -11,13 +62,13 @@
 	color: pink;
 }
 
-.menu a{
+.menue a{
 	color: pink;
 }
-.menu>ul>li>a{
+.menue>ul>li>a{
 	color: green;
 }
-.menu>ul>li>ul{
+.menue>ul>li>ul{
 	list-style-type:none;
 }
 .berries>ul>li>a {
@@ -94,14 +145,10 @@ p:last-child>code{
 .chess{
 	width: 240px;
 	height: 240px;
-	margin: 0px;
-	padding: 0px;
 	letter-spacing : -.36em;
 	line-height:0px;
 }
 .chess div {
-	margin: 0px;
-	padding: 0px;
 	width: 30px;
 	height: 30px;
 	display: inline-table;
